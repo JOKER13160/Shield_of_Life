@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 410192cfb1a17e44fac2b4f9ea355d80, type: 3}
+  m_Name: SelectStageDataSO
+  m_EditorClassIdentifier: 
+  SelectStageDatasList:
+  - id: 1
+    chapter: 0
+    stage: d-1
+    description: 1
+  - id: 2
+    chapter: 0
+    stage: d-2
+    description: 2
+  - id: 3
+    chapter: 0
+    stage: d-3
+    description: 3
+  - id: 4
+    chapter: 0
+    stage: d-4
+    description: 4
+  - id: 5
+    chapter: 0
+    stage: d-5
+    description: 5
+  - id: 6
+    chapter: 0
+    stage: d-6
+    description: 6
+  - id: 7
+    chapter: 0
+    stage: d-7
+    description: 7
+  - id: 8
+    chapter: 0
+    stage: d-8
+    description: 8
+  - id: 9
+    chapter: 0
+    stage: d-9
+    description: 9
+  - id: 10
+    chapter: 0
+    stage: d-10
+    description: 10

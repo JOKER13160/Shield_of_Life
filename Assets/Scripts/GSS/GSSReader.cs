@@ -11,9 +11,9 @@ using UnityEngine.Events;
 public enum SheetName
 {
     
-    SkillData,      // 自分の作成したスプレッドシート内のシートの名前を登録します
-    SupportTowerData,
-    DisasterData
+    SelectStageData,      // 自分の作成したスプレッドシート内のシートの名前を登録します
+    //SupportTowerData,
+    //DisasterData
 
 }
 
@@ -35,11 +35,11 @@ public class SheetData
 public class GSSReader : MonoBehaviour
 {
 
-    public string SheetID = "1omxepH6Ozu0nviL1iW9vSve-6c_y-fcM1ssk0b7HxRY";//スプレッドシートのアドレス
+    public string SheetID = "1KzaS7tX6eCuiosQghVe07hAjgnsFmFjO1NRl1kL3Enk";//スプレッドシートのアドレス
 
     public UnityEvent OnLoadEnd;　　　// この変数にインスペクターからメソッドを登録しておくと、スプレッドシートを読み込み後にコールバックする
 
-    [Header("TowerDefence")]       //読み込むシート名
+    [Header("Shield_of_Life")]       //読み込むシート名
     public SheetData[] sheetDatas;
 
     public void Reload() => StartCoroutine(GetFromWeb());
