@@ -1,18 +1,18 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
 
 /// <summary>
-/// ƒXƒg[ƒŠ[‚ÌÍ‚Ì•ª—Ş
+/// ã‚¹ãƒˆãƒ¼ãƒªãƒ¼ã®ç« ã®åˆ†é¡
 /// </summary>
 public enum chapter
 {
     demo,
-    ˆêÍ,
-    “ñÍ,
-    OÍ
-    // ‘¼‚É‚à‚ ‚ê‚Î’Ç‰Á
+    ä¸€ç« ,
+    äºŒç« ,
+    ä¸‰ç« 
+    // ä»–ã«ã‚‚ã‚ã‚Œã°è¿½åŠ 
 
 }
 
@@ -26,19 +26,19 @@ public class SelectStageData
 
 
     /// <summary>
-    /// ƒRƒXƒgƒ‰ƒNƒ^
+    /// ã‚³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
     /// </summary>
     /// <param name="datas"></param>
     public SelectStageData(string[] datas)
     {
 
-        // æ“¾‚µ‚½î•ñ‚ÌŠm”F
+        // å–å¾—ã—ãŸæƒ…å ±ã®ç¢ºèª
         for (int i = 0; i < datas.Length; i++)
         {
             Debug.Log(datas[i]);
         }
 
-        // æ“¾‚µ‚½î•ñ‚ğƒLƒƒƒXƒg‚µ‚Ä‘ã“ü
+        // å–å¾—ã—ãŸæƒ…å ±ã‚’ã‚­ãƒ£ã‚¹ãƒˆã—ã¦ä»£å…¥
         id = int.Parse(datas[0]);
         chapter = (chapter)Enum.Parse(typeof(chapter), datas[1]);
         stage = datas[2];

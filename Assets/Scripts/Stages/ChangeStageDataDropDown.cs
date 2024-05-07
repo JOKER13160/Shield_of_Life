@@ -1,8 +1,7 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using TMPro;
-using System.Linq;
 
 public class ChangeStageDataDropDown : MonoBehaviour
 {
@@ -13,23 +12,24 @@ public class ChangeStageDataDropDown : MonoBehaviour
 
     void Start()
     {
-        //ƒIƒvƒVƒ‡ƒ“”z—ñ‚ğ‰Šú‰»
+        
+        //ã‚ªãƒ—ã‚·ãƒ§ãƒ³é…åˆ—ã‚’åˆæœŸåŒ–
         dropdown.ClearOptions();
-        //V‚µ‚¢ƒIƒvƒVƒ‡ƒ“‚ğİ’è
+        //æ–°ã—ã„ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚’è¨­å®š
         List<string> options = new List<string>();
-        //SO‚ÌChapter‚ğæ“¾
-        //Chapter‚Ç‚¤‚µ‚Å”äŠr
+        //SOã®Chapterã‚’å–å¾—
+        //Chapterã©ã†ã—ã§æ¯”è¼ƒ
         for (int i = 0; i < SelectStageDataSO.SelectStageDatasList.Count; i++)
         { 
             if (chapter == SelectStageDataSO.SelectStageDatasList[i].chapter)
             {
                 options.Add(SelectStageDataSO.SelectStageDatasList[i].stage);
-                
+                Debug.Log("stage : " + SelectStageDataSO.SelectStageDatasList[i].stage);
                 
             }
         }
         dropdown.AddOptions(options);
         Label.text = chapter.ToString();
-        Debug.Log("Label.text : " + Label.text);
+        Debug.Log("ãƒ©ãƒ™ãƒ«ãƒ†ã‚­ã‚¹ãƒˆ : " + Label.text);
     }
 }
