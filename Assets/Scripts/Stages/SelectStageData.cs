@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 
 /// <summary>
-/// スキルの種類
+/// ストーリーの章の分類
 /// </summary>
 public enum chapter
 {
