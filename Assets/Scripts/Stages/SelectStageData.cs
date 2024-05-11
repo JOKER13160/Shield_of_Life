@@ -9,9 +9,9 @@ using System;
 public enum chapter
 {
     demo,
-    一章,
-    二章,
-    三章
+    chapter1,
+    chapter2,
+    chapter3
     // 他にもあれば追加
 
 }
