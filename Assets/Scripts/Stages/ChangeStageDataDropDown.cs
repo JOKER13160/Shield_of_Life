@@ -24,6 +24,7 @@ public class ChangeStageDataDropDown : MonoBehaviour,ISetup,IPointerDownHandler
 
     public void Setup()
     {
+        dropdown.value = -1;
         //オプション配列を初期化
         dropdown.ClearOptions();
         //新しいオプションを設定
@@ -42,6 +43,8 @@ public class ChangeStageDataDropDown : MonoBehaviour,ISetup,IPointerDownHandler
         dropdown.AddOptions(options);
         Label.text = chapter.ToString();
         Debug.Log("ラベルテキスト : " + Label.text);
+        //dropdown.value = options.Count;
+        //Debug.Log(dropdown.value);
     }
 
     public void OnPointerDown(PointerEventData eventData)
