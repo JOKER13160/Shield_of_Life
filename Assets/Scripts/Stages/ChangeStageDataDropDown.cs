@@ -42,7 +42,6 @@ public class ChangeStageDataDropDown : MonoBehaviour,ISetup,IPointerDownHandler
         dropdown.AddOptions(options);
         Label.text = chapter.ToString();
         Debug.Log("ラベルテキスト : " + Label.text);
-        dropdown.value = 10;
     }
 
     public void OnPointerDown(PointerEventData eventData)
