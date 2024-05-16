@@ -10,9 +10,11 @@ using UnityEngine.Events;
 /// </summary>
 public enum SheetName
 {
+    // 自分の作成したスプレッドシート内のシートの名前を登録します
     
-    SelectStageData,      // 自分の作成したスプレッドシート内のシートの名前を登録します
-    //SupportTowerData,
+    SelectStageData,
+    StageFactionData,
+    StageDisasterData
     //DisasterData
 
 }

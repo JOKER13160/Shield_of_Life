@@ -55,6 +55,12 @@ public class GSSReceiver : MonoBehaviour
             DataBaseManager.instance.SelectStageDataSO.SelectStageDatasList =
                 new List<SelectStageData>(sheetDataslist.Find(x => x.SheetName == SheetName.SelectStageData).DatasList.Select(x => new SelectStageData(x)).ToList());
 
+            DataBaseManager.instance.StageFactionDataSO.stageFactionDatasList =
+                new List<StageFactionData>(sheetDataslist.Find(x => x.SheetName == SheetName.StageFactionData).DatasList.Select(x => new StageFactionData(x)).ToList());
+
+            DataBaseManager.instance.StageDisasterDataSO.stageDisasterDatasList =
+                new List<StageDisasterData>(sheetDataslist.Find(x => x.SheetName == SheetName.StageDisasterData).DatasList.Select(x => new StageDisasterData(x)).ToList());
+
             //// TODO ‘¼‚Ì SO ‚ð’Ç‰Á‚·‚é
             //DataBaseManager.instance.towerDataSO.towerDatasList =
             //    new List<TowerData>(sheetDataslist.Find(x => x.SheetName == SheetName.SupportTowerData).DatasList.Select(x => new TowerData(x)).ToList());

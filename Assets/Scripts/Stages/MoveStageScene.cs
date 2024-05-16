@@ -34,6 +34,9 @@ public class MoveStageScene : MonoBehaviour,ISetup
             // シーンをロード
             UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
             Debug.Log(sceneName);
+
+            GameManager.Instance.SetGameState(GameManager.GameState.play);
+            Debug.Log("GameState : " + GameManager.Instance.gameState);
         }
         else
         {

@@ -8,6 +8,8 @@ public class DataBaseManager : MonoBehaviour
     public static DataBaseManager instance;
 
     public SelectStageDataSO SelectStageDataSO;
+    public StageFactionDataSO StageFactionDataSO;
+    public StageDisasterDataSO StageDisasterDataSO;
     //public AttackRangeSizeSO attackRangeSizeSO;
     //public SkillDataSO skillDataSO;
     //public TowerDataSO towerDataSO;
