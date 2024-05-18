@@ -27,8 +27,7 @@ public class GameManager : MonoBehaviour
         win,
         lose
     }
-    [SerializeField]
-    public GameState gameState;
+    [SerializeField]public GameState gameState;
 
     private void Start()
     {
@@ -54,10 +53,7 @@ public class GameManager : MonoBehaviour
                     Debug.Log("GameState : " + gameState);
                 }
             }
-
-
             yield return new WaitForFixedUpdate();
         }
-        
     }
 }

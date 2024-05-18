@@ -5507,6 +5507,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45a3aba3984bc4d8852ee750cbcd26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameState: 0
+  vitalliumGenerator: {fileID: 0}
 --- !u!224 &986505936 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4082453174052662913, guid: d3abfe555c504a74fb9d16d982306171, type: 3}
