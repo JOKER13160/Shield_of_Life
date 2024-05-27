@@ -9,6 +9,7 @@ public class DropMe : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointe
 	public Image receivingImage;
 	private Color normalColor;
 	public Color highlightColor = Color.yellow;
+	public Moduledetail Moduledetail;
 	
 	public void OnEnable ()
 	{
@@ -26,6 +27,8 @@ public class DropMe : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointe
 		Sprite dropSprite = GetDropSprite (data);
 		if (dropSprite != null)
 			receivingImage.overrideSprite = dropSprite;
+
+		GetModuleDatail(data);
 	}
 
 	public void OnPointerEnter(PointerEventData data)
@@ -62,4 +65,18 @@ public class DropMe : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointe
 		
 		return srcImage.sprite;
 	}
+
+	private void GetModuleDatail(PointerEventData data)
+	{
+        var originalObj = data.pointerDrag;
+		Debug.Log(originalObj.name);
+		if (originalObj == null)
+			return;
+
+        var DropModuleDatail = originalObj.transform.parent.GetComponent<Moduledetail>();
+		if (DropModuleDatail == null)
+			return;
+		Debug.Log(DropModuleDatail.ModuleData.id);
+		Moduledetail.ModuleData = DropModuleDatail.ModuleData;
+    }
 }
